@@ -7,9 +7,17 @@ Este proyecto implementa una aplicación web sencilla utilizando **Flask** como 
 
 ## 📁 Estructura del Proyecto
 
-LAB06/ ├── static/ │ └── style.css # Archivo de estilos CSS para la aplicación ├── templates/ │ └── index.html # Página principal de la aplicación (HTML con Jinja2) ├── app.py # Aplicación principal de Flask ├── default.conf # Configuración del servidor (por ejemplo, para Nginx) ├── docker-compose.yml # Orquestación de servicios con Docker Compose ├── Dockerfile # Imagen personalizada de Docker para la app ├── requirements.txt # Lista de dependencias de Python/Flaskyaml
-Copiar
-Editar
+LAB06/
+├── static/
+│   └── style.css              # Archivo de estilos CSS para la aplicación
+├── templates/
+│   └── index.html             # Página principal de la aplicación (HTML con Jinja2)
+├── app.py                     # Aplicación principal de Flask
+├── default.conf               # Configuración del servidor (por ejemplo, para Nginx)
+├── docker-compose.yml         # Orquestación de servicios con Docker Compose
+├── Dockerfile                 # Imagen personalizada de Docker para la app
+├── requirements.txt           # Lista de dependencias de Python/Flask
+
 
 ---
 
