@@ -9,14 +9,14 @@ Este proyecto implementa una aplicación web sencilla utilizando **Flask** como 
 
 LAB06/
 ├── static/
-│   └── style.css              # Archivo de estilos CSS para la aplicación
+│   └── style.css
 ├── templates/
-│   └── index.html             # Página principal de la aplicación (HTML con Jinja2)
-├── app.py                     # Aplicación principal de Flask
-├── default.conf               # Configuración del servidor (por ejemplo, para Nginx)
-├── docker-compose.yml         # Orquestación de servicios con Docker Compose
-├── Dockerfile                 # Imagen personalizada de Docker para la app
-├── requirements.txt           # Lista de dependencias de Python/Flask
+│   └── index.html            
+├── app.py             
+├── default.conf             
+├── docker-compose.yml       
+├── Dockerfile               
+├── requirements.txt           
 
 
 ---
@@ -25,7 +25,7 @@ LAB06/
 
 ### 1. Clonar el repositorio
 
-```bash
+
 git clone <URL-del-repositorio>
 cd LAB06
 2. Construir la imagen Docker
@@ -40,12 +40,12 @@ Editar
 docker-compose up -d
 Esto iniciará la app Flask expuesta en http://localhost:8088.
 
-🌐 Acceso a la aplicación
+## 🌐 Acceso a la aplicación
 Abre tu navegador y visita:
 
 👉 http://localhost:8088/lab06
 
-🐳 Detalles del contenedor
+## 🐳 Detalles del contenedor
 Puerto interno (contenedor): 80
 
 Puerto externo (host): 8088
@@ -56,7 +56,7 @@ Framework: Flask
 
 Servidor Web: Integrado con Flask (puede ser reemplazado por Gunicorn + Nginx si se desea escalar)
 
-🧪 Tecnologías utilizadas
+## 🧪 Tecnologías utilizadas
 Python 3.9
 
 Flask
