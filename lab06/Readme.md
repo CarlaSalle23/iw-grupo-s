@@ -1,69 +1,50 @@
 # LAB06 - Aplicación Web con Flask y Docker
 
-Este proyecto implementa una aplicación web sencilla utilizando **Flask** como framework de desarrollo, Docker como contenedor y `docker-compose` para orquestación. El objetivo es replicar la estructura de un servidor web con VirtualHost, accediendo mediante la ruta:  
-👉 `http://localhost:8088/lab06`
+Este proyecto despliega una aplicación **Flask** bajo la ruta `/lab06` usando **Apache2 + mod_wsgi**, todo dentro de un contenedor **Docker**, replicando el entorno manual basado en Apache y PHP utilizado por el profesor, pero automatizado con Docker.
+
+## Estructura del Proyecto
+
+```
+lab06/
+├── static/           # Archivos CSS y otros recursos estáticos
+├── templates/        # Plantillas HTML
+├── app.py            # Aplicación Flask (sin app.run())
+├── lab06.conf        # Configuración de Apache (VirtualHost/Alias + WSGI)
+├── Dockerfile        # Dockerfile con Ubuntu 20.04 + Apache2 + mod_wsgi + Flask
+├── requirements.txt  # Flask únicamente
+```
+
+## Cómo Ejecutar la Aplicación
+
+Abre una terminal dentro del directorio `lab06` y ejecuta los siguientes comandos:
+Clonar el repositorio
+```
+git clone https://github.com/CarlaSalle23/iw-grupo-s.git
+```
+NOTA: tener abierto docker antes de ejecutar los siguiente comandos 
+
+# 1. Construir la imagen Docker:
+```
+docker build -t mi-lab06-apache-flask .
+```
+# 2. Ejecutar el contenedor:
+```
+docker run -d --name lab06-apache-flask-app -p 8085:80 mi-lab06-apache-flask
+```
+
+Luego abre tu navegador y visita:
+
+```
+http://localhost:8085/lab06
+```
+
+## Características Técnicas
+
+- **Ubuntu 20.04** como base (igual que el entorno manual del profesor).
+- **Apache2 + mod_wsgi** para servir la app Flask.
+- **Alias /lab06/static** para servir recursos estáticos.
+- **WSGIScriptAlias /lab06** para enrutar solicitudes hacia Flask.
+- **Docker** para automatizar instalación y despliegue.
 
 ---
-
-## 📁 Estructura del Proyecto
-
-LAB06/
-├── static/
-│   └── style.css
-├── templates/
-│   └── index.html            
-├── app.py             
-├── default.conf             
-├── docker-compose.yml       
-├── Dockerfile               
-├── requirements.txt           
-
-
----
-
-## 🚀 Cómo ejecutar la aplicación
-
-### 1. Clonar el repositorio
-
-
-git clone <URL-del-repositorio>
-cd LAB06
-2. Construir la imagen Docker
-bash
-Copiar
-Editar
-docker-compose build
-3. Levantar el contenedor
-bash
-Copiar
-Editar
-docker-compose up -d
-Esto iniciará la app Flask expuesta en http://localhost:8088.
-
-## 🌐 Acceso a la aplicación
-Abre tu navegador y visita:
-
-👉 http://localhost:8088/lab06
-
-## 🐳 Detalles del contenedor
-Puerto interno (contenedor): 80
-
-Puerto externo (host): 8088
-
-Lenguaje: Python 3.9
-
-Framework: Flask
-
-Servidor Web: Integrado con Flask (puede ser reemplazado por Gunicorn + Nginx si se desea escalar)
-
-## 🧪 Tecnologías utilizadas
-Python 3.9
-
-Flask
-
-Docker
-
-Docker Compose
-
-HTML/CSS (básico)
 
