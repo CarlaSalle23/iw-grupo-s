@@ -6,8 +6,8 @@ Este es el proyecto de scaffolding con Flask y Docker para el parcial de Ingenie
 ## Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repo.git
-cd tu-repo
+git clone [https://github.com/tu-usuario/tu-repo.git
+cd tu-repo](https://github.com/CarlaSalle23/iw-grupo-s.git)
 ```
 
 _Reemplaza_ `https://github.com/tu-usuario/tu-repo.git` por tu URL real en GitHub.
