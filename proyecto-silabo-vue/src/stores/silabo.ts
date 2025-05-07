@@ -1,79 +1,138 @@
 import { defineStore } from 'pinia'
+import { silaboEjemplo } from '../data/silaboData'
+
+interface NroHoras {
+  teoria: string
+  practica: string
+}
+
+interface Docente {
+  nombre: string
+  correo: string
+  firma: string | null
+}
+
+interface DatosGenerales {
+  facultad: string
+  semestre: string
+  areaFormacion: string
+  tipoCurso: string
+  carreraProfesional: string
+  nroCreditos: string
+  preRequisitos: string
+  periodoLectivo: string
+  nroHoras: NroHoras
+  codigoCurso: string
+  docente: Docente
+}
 
 interface Semana {
+  numero: number
   contenido: string
-  fecha: string
-  peso: number
-  numeroGlobal: number
+}
+
+interface FuenteConsulta {
+  tipo: string
+  referencia: string
 }
 
 interface Unidad {
-  titulo: string
-  metodologias: string[]
+  id: number
+  denominacion: string
+  fechaInicio: string
+  fechaFin: string
+  capacidad: string
   semanas: Semana[]
+  metodologias: string[]
+  fuentesConsulta: FuenteConsulta[]
+}
+
+interface Actividades {
+  investigacionFormativa: string
+  responsabilidadSocial: string
+}
+
+interface CriterioEvaluacion {
+  evaluacion: string
+  peso: string
+  fechaConsolidacion: string
+  descripcion: string
 }
 
 interface Silabo {
-  id: string
-  datosGenerales: {
-    facultad: string
-    escuela: string
-    asignatura: string
-    codigo: string
-    ciclo: string
-    creditos: number
-  }
-  competencias: {
-    generales: string[]
-    especificas: string[]
-  }
+  datosGenerales: DatosGenerales
+  competenciaCurso: string[]
+  competenciaPerfilEgreso: string
+  competenciasPrevias: string[]
   sumilla: string
   unidades: Unidad[]
-  fuentesConsulta: string[]
-  firma: string
-  fechaCreacion: string
+  actividades: Actividades
+  criteriosEvaluacion: CriterioEvaluacion[]
 }
 
 export const useSilaboStore = defineStore('silabo', {
-  state: (): { silabos: Silabo[], silaboActual: Silabo | null } => ({
-    silabos: [],
-    silaboActual: null
+  state: (): { silabos: Silabo[]; silaboActual: Silabo | null } => ({
+    silabos: [silaboEjemplo],
+    silaboActual: null,
   }),
 
   actions: {
     inicializarSilabo() {
       this.silaboActual = {
-        id: crypto.randomUUID(),
         datosGenerales: {
           facultad: '',
-          escuela: '',
-          asignatura: '',
-          codigo: '',
-          ciclo: '',
-          creditos: 0
+          semestre: '',
+          areaFormacion: '',
+          tipoCurso: '',
+          carreraProfesional: '',
+          nroCreditos: '',
+          preRequisitos: '',
+          periodoLectivo: '',
+          nroHoras: {
+            teoria: '',
+            practica: '',
+          },
+          codigoCurso: '',
+          docente: {
+            nombre: '',
+            correo: '',
+            firma: null,
+          },
         },
-        competencias: {
-          generales: [''],
-          especificas: ['']
-        },
+        competenciaCurso: [],
+        competenciaPerfilEgreso: '',
+        competenciasPrevias: [],
         sumilla: '',
         unidades: [],
-        fuentesConsulta: [''],
-        firma: '',
-        fechaCreacion: new Date().toISOString()
+        actividades: {
+          investigacionFormativa: '',
+          responsabilidadSocial: '',
+        },
+        criteriosEvaluacion: [],
       }
     },
 
-    actualizarDatosGenerales(datos: Silabo['datosGenerales']) {
+    cargarSilaboEjemplo() {
+      this.silaboActual = { ...silaboEjemplo }
+      this.guardarSilabo()
+    },
+
+    actualizarDatosGenerales(datos: DatosGenerales) {
       if (this.silaboActual) {
         this.silaboActual.datosGenerales = datos
         this.guardarSilabo()
       }
     },
 
-    actualizarCompetencias(competencias: Silabo['competencias']) {
+    actualizarCompetencias(
+      competenciaCurso: string[],
+      competenciaPerfilEgreso: string,
+      competenciasPrevias: string[],
+    ) {
       if (this.silaboActual) {
-        this.silaboActual.competencias = competencias
+        this.silaboActual.competenciaCurso = competenciaCurso
+        this.silaboActual.competenciaPerfilEgreso = competenciaPerfilEgreso
+        this.silaboActual.competenciasPrevias = competenciasPrevias
         this.guardarSilabo()
       }
     },
@@ -85,48 +144,35 @@ export const useSilaboStore = defineStore('silabo', {
       }
     },
 
-    agregarUnidad() {
+    actualizarUnidad(unidad: Unidad) {
       if (this.silaboActual) {
-        this.silaboActual.unidades.push({
-          titulo: '',
-          metodologias: [''],
-          semanas: []
-        })
+        const index = this.silaboActual.unidades.findIndex((u) => u.id === unidad.id)
+        if (index !== -1) {
+          this.silaboActual.unidades[index] = unidad
+        } else {
+          this.silaboActual.unidades.push(unidad)
+        }
         this.guardarSilabo()
       }
     },
 
-    actualizarUnidad(index: number, unidad: Unidad) {
+    actualizarActividades(actividades: Actividades) {
       if (this.silaboActual) {
-        this.silaboActual.unidades[index] = unidad
+        this.silaboActual.actividades = actividades
         this.guardarSilabo()
       }
     },
 
-    eliminarUnidad(index: number) {
+    actualizarCriteriosEvaluacion(criterios: CriterioEvaluacion[]) {
       if (this.silaboActual) {
-        this.silaboActual.unidades.splice(index, 1)
-        this.guardarSilabo()
-      }
-    },
-
-    actualizarFuentesConsulta(fuentes: string[]) {
-      if (this.silaboActual) {
-        this.silaboActual.fuentesConsulta = fuentes
-        this.guardarSilabo()
-      }
-    },
-
-    actualizarFirma(firma: string) {
-      if (this.silaboActual) {
-        this.silaboActual.firma = firma
+        this.silaboActual.criteriosEvaluacion = criterios
         this.guardarSilabo()
       }
     },
 
     guardarSilabo() {
       if (this.silaboActual) {
-        const index = this.silabos.findIndex(s => s.id === this.silaboActual?.id)
+        const index = this.silabos.findIndex((s) => s === this.silaboActual)
         if (index !== -1) {
           this.silabos[index] = { ...this.silaboActual }
         } else {
@@ -143,16 +189,10 @@ export const useSilaboStore = defineStore('silabo', {
       }
     },
 
-    cargarSilabo(id: string) {
-      const silabo = this.silabos.find(s => s.id === id)
-      if (silabo) {
-        this.silaboActual = { ...silabo }
+    cargarSilabo(index: number) {
+      if (this.silabos[index]) {
+        this.silaboActual = { ...this.silabos[index] }
       }
     },
-
-    eliminarSilabo(id: string) {
-      this.silabos = this.silabos.filter(s => s.id !== id)
-      localStorage.setItem('silabos', JSON.stringify(this.silabos))
-    }
-  }
-}) 
+  },
+})
