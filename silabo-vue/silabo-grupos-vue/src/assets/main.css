@@ -1,11 +1,5 @@
-/* === main.css === */
-
 .btn {
-  @apply px-4 py-2 rounded font-semibold transition duration-150 shadow-md bg-blue-500 text-white;
-}
-
-.btn:hover {
-  @apply bg-blue-600;
+  @apply px-4 py-2 rounded font-semibold transition duration-150 shadow-md text-white;
 }
 
 .input {
