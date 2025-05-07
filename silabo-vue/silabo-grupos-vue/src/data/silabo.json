@@ -1,0 +1,62 @@
+{
+    "datosGenerales": {
+      "curso": "Ingeniería Web",
+      "semestre": "VII",
+      "docente": "Richart Escobedo",
+      "creditos": 4,
+      "horas": {
+        "teoria": 2,
+        "practica": 4
+      },
+      "periodo": "2025 - I"
+    },
+    "competenciasCurso": [
+      "Utilizar las recomendaciones de la W3C para el desarrollo de aplicaciones web.",
+      "Conocer un framework MVC para el desarrollo de aplicaciones web.",
+      "Conocer los criterios de seguridad OWASP cuando se desarrollan aplicaciones web."
+    ],
+    "competenciaPerfilEgreso": "Desarrollar, mantener y evaluar servicios y sistemas software que satisfagan todos los requisitos del usuario...",
+    "semanas": [
+      {
+        "numero": 1,
+        "contenido": "Presentación del curso. Sílabo. Metodología. Sistema de Evaluación. Historia. Arquitectura. HTTP. Base de datos en la nube.",
+        "metodologia": "Clase magistral",
+        "fuentes": [1, 2]
+      },
+      {
+        "numero": 2,
+        "contenido": "Tecnologías de desarrollo web. IDEs. Frameworks Front-End y Back-End. Git y GitHub.",
+        "metodologia": "Práctica guiada",
+        "fuentes": [1, 2]
+      },
+      {
+        "numero": 3,
+        "contenido": "Despliegue con Docker",
+        "metodologia": "Laboratorio",
+        "fuentes": [5]
+      },
+      {
+        "numero": 4,
+        "contenido": "Avance de proyecto: desarrollo incremental",
+        "metodologia": "Aprendizaje basado en proyectos",
+        "fuentes": []
+      }
+    ],
+    "fechasConsolidacion": {
+      "evidencia1": "2025-04-05",
+      "evidencia2": "2025-04-26",
+      "examenParcial": "2025-05-09",
+      "evidencia3": "2025-05-31",
+      "evidencia4": "2025-06-21",
+      "examenFinal": "2025-07-05"
+    },
+    "referencias": [
+      "[1] C. Hur and L. Ubelhor, *Developing Business Applications for the Web: With HTML, CSS, JSP, PHP, ASP.NET, and JavaScript*, MC Press, 2017.",
+      "[2] B. Frain, *Responsive Web Design with HTML5 and CSS: Develop future-proof responsive websites using the latest HTML5 and CSS techniques*, 2020.",
+      "[3] T. A. Felke-Morris, *Web development and design foundations with HTML5*, 9th ed., New York, NY: Pearson, 2019.",
+      "[4] B. Jin, S. Sahni, and A. Shevat, *Designing web APIs: building APIs that developers love*, 1st ed., Sebastopol, CA: O’Reilly Media, 2018.",
+      "[5] P. McFedries, *Web coding & development all-in-one*, Hoboken, NJ: John Wiley & Sons, Inc., 2018.",
+      "[6] H. Singh and M. Bhatt, *Learning web development with React and Bootstrap: build real-time responsive web apps using React and Bootstrap*, 2016."
+    ]
+  }
+  

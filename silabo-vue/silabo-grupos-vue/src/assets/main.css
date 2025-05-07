@@ -1,35 +1,25 @@
-@import './base.css';
+/* === main.css === */
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+.btn {
+  @apply px-4 py-2 rounded font-semibold transition duration-150 shadow-md bg-blue-500 text-white;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+.btn:hover {
+  @apply bg-blue-600;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.input {
+  @apply border border-blue-300 rounded px-3 py-2 w-full focus:ring-2 focus:ring-blue-400 focus:outline-none;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.card {
+  @apply bg-white rounded-xl shadow p-4;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.references-list {
+  @apply list-disc ml-6 text-sm text-gray-700;
+}
+
+.signature-preview {
+  @apply mt-2 border border-blue-200 rounded p-2 bg-blue-50;
 }
