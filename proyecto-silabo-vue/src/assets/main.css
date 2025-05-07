@@ -8,13 +8,17 @@
   font-weight: normal;
 }
 
-a,
-.green {
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  color: var(--text-color);
+  transition: color 0.3s ease, font-weight 0.3s ease;
 }
+
+a:hover {
+  color: var(--primary-color); /* Cambia el color al pasar el cursor */
+  font-weight: bold; /* Aumenta el grosor de la fuente */
+}
+
 
 @media (hover: hover) {
   a:hover {
@@ -29,9 +33,11 @@ a,
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    width: 100%;
+    max-width: none; 
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: normal;
   }
 }
 
@@ -55,7 +61,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: var(--text-color);
-  background-color: var(--background-color);
+  background-color: #e0e0e0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -150,6 +156,15 @@ input, textarea {
   text-align: center;
 }
 
+.text-hover {
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.text-hover:hover {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
 .mt-1 { margin-top: 0.5rem; }
 .mt-2 { margin-top: 1rem; }
 .mt-3 { margin-top: 1.5rem; }
@@ -159,3 +174,4 @@ input, textarea {
 .mb-2 { margin-bottom: 1rem; }
 .mb-3 { margin-bottom: 1.5rem; }
 .mb-4 { margin-bottom: 2rem; }
+
