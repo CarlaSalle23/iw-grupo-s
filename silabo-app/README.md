@@ -66,7 +66,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente en tu máquina:
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/silabo-app.git
+git clone [https://github.com/tu-usuario/silabo-app.git](https://github.com/CarlaSalle23/iw-grupo-s.git)
 cd silabo-app
 ```
 
