@@ -1,0 +1,388 @@
+{   
+    "datosGenerales": {
+      "curso": "Ingeniería Web",
+      "facultad": "Ingenierías y Arquitectura",
+      "semestre": "VII",
+      "areaFormacion": "Estudios de Especialidad",
+      "tipoCurso": "Obligatorio",
+      "carreraProfesional": "Ingeniería de Software",
+      "numeroCreditos": "Cuatro",
+      "preRequisitos": "Base de Datos II",
+      "periodoLectivo": "2025 - I",
+      "numeroHoras": {
+        "teoria": "02",
+        "practica": "04"
+      },
+      "codigoCurso": "3.7.4.21",
+      "docente": "Richart Smith Escobedo Quispe",
+      "correo": "r.escobedo@ulasalle.edu.pe"
+    },
+    "competenciaCurso": [
+      "Utilizar las recomendaciones de la W3C para el desarrollo de aplicaciones web.",
+      "Conocer un framework MVC para el desarrollo de aplicaciones web.",
+      "Conocer los criterios de seguridad OWASP cuando se desarrollan aplicaciones web."
+    ],
+    "competenciaPerfil": "Desarrollar, mantener y evaluar servicios y sistemas software que satisfagan todos los requisitos del usuario y se comporten de forma fiable y eficiente, sean asequibles de desarrollar y mantener y cumplan normativas de calidad, aplicando las teorías, principios, métodos y prácticas de la informática.",
+    "competenciasPrevias": [
+      "Conocimientos básicos de matemáticas discretas, cálculo, lógica computacional como base para la estructuración de datos, algoritmos, programación de computadoras, diseño y arquitectura de software.",
+      "Comprensión de la responsabilidad y ética profesional.",
+      "Gestionar el desarrollo de sistemas de software.",
+      "Capacidad de aprender y actualizarse permanentemente."
+    ],
+    "sumilla": "El curso contempla los siguientes temas: Programación del lado del servidor y programación de lado del cliente. Servicios web y servidores web. Estructura de la información: Hipertexto, Hipermedia. Proceso del diseño web. Medios digitales: Librerías digitales. Herramientas de captura y producción de medios. Compresión. Streaming media. Formatos multimedia. Desarrollo web: Interfaces web. Implementación e integración web. Integración de Bases de Datos. Accesibilidad y vulnerabilidad: Seguridad en el lado del cliente. Seguridad en el lado del Servidor. Programación en el lado del servidor: Comandos básicos de UNIX, CGIs; condicionales, ciclos, expresiones regulares, arreglos tablas hash, listas, archivos, pruebas de unidad; formularios: GET, POST. Conexión entre el CGI y la base de datos. Cookies. Programación en el lado del cliente: JavaScript, páginas dinámicas. Combos desplegables con JavaScript, CGIs y Bases de Datos. AJAX, el objeto XMLHttpRequest, APIs y Servicios WEB. Ejemplo de interacción: CGIs, Bases de datos, AJAX, CSS. HTML5 y otras propuestas. Conectando aplicaciones WEB con Bases de datos bajo un patrón modelo vista controlador. Formularios y verificación de campos; inyección de código; cookies, sesiones; seguridad WEB. Programando el cliente: Bibliotecas de programación para animaciones del lado del cliente y frameworks para webs dinámicas.",
+    "unidades": [
+      {
+        "numero": "I",
+        "denominacion": "Tecnologías para el desarrollo de aplicaciones web.",
+        "intervaloFechas": "Del 10 de marzo al 05 de abril del 2025.",
+        "capacidad": "El estudiante conoce y utiliza reponsablemente las tecnologías para el desarrollo de aplicaciones web.",
+        "semanas": [
+          {
+            "numero": 1,
+            "contenidos": [
+              "Presentación del Curso. Sílabo. Metodología.",
+              "Sistema de Evaluación.",
+              "Historia. Arquitectura. Protocolo HTTP.",
+              "Inicio Rápido de un Servicio de alojamiento de Base datos en la Nube.",
+              "Inicio rápido en Frameworks Front-End."
+            ]
+          },
+          {
+            "numero": 2,
+            "contenidos": [
+              "Tecnologías de Desarrollo Web",
+              "Editor de texto: Vim. IDE: VSCode.",
+              "Front-End: Estándares Web, frameworks.",
+              "Back-End: Lenguajes de Programación, frameworks.",
+              "Sistema de control de versiones: Git. (GitHub)."
+            ]
+          },
+          {
+            "numero": 3,
+            "contenidos": [
+              "Despliegue de aplicaciones web desde contenedores con Docker."
+            ]
+          },
+          {
+            "numero": 4,
+            "contenidos": [
+              "Presentación de avance de proyecto:",
+              "Desarrollo incremental de una aplicación web"
+            ]
+          }
+        ],
+        "metodologias": [
+          "Lectura: Revisión de la documentación oficial de las plataformas y frameworks de desarrollo web.",
+          "Prácticas: Implementación de funcionalidades desde repositorios de código fuente.",
+          "Aprendizaje basado en proyectos: Desarrollo incremental de una aplicación web.",
+          "Clase magistral: Recomendaciones del desarrollo web. Estándares Web. Accesibilidad. Seguridad. Buenas prácticas."
+        ],
+        "fuentesConsulta": [
+          {
+            "tipo": "libro",
+            "referencia": "Hur, C., & Ubelhor, L. (2017). Developing Business Applications for the Web: With HTML, CSS, JSP, PHP, ASP.NET, and JavaScript. MC Press."
+          },
+          {
+            "tipo": "libro",
+            "referencia": "Frain, B. (2020). Responsive Web Design with HTML5 and CSS: Develop future-proof responsive websites using the latest HTML5 and CSS techniques."
+          },
+          {
+            "tipo": "libro",
+            "referencia": "Felke-Morris, T. A. (2019). Web development and design foundations with HTML5 (9th edition). New York, NY: Pearson."
+          },
+          {
+            "tipo": "web",
+            "referencia": "Historia: https://www.w3.org/about/history/"
+          },
+          {
+            "tipo": "web",
+            "referencia": "Arquitectura de la Web: https://www.w3.org/TR/webarch/"
+          },
+          {
+            "tipo": "web",
+            "referencia": "HTTP: https://www.w3schools.com/whatis/whatis_http.asp"
+          },
+          {
+            "tipo": "web",
+            "referencia": "Estándares Web: https://www.w3.org/standards/"
+          },
+          {
+            "tipo": "web",
+            "referencia": "VIM: https://www.truth.sk/vim/vimbook-OPL.pdf"
+          },
+          {
+            "tipo": "web",
+            "referencia": "Git: https://git-scm.com/book/en/v2"
+          },
+          {
+            "tipo": "web",
+            "referencia": "Base de datos en la nube: https://supabase.com/docs/guides/getting-started/quickstarts/"
+          },
+          {
+            "tipo": "web",
+            "referencia": "Framework Front-End: https://vuejs.org/guide/quick-start"
+          },
+          {
+            "tipo": "web",
+            "referencia": "Tutorial: https://supabase.com/docs/guides/getting-started/tutorials/with-vue-3"
+          }
+        ]
+      },
+      {
+        "numero": "II",
+        "denominacion": "Frameworks Back-end para el desarrollo de aplicaciones Web",
+        "intervaloFechas": "Del 07 de abril al 03 de mayo del 2025.",
+        "capacidad": "El estudiante conoce y utiliza reponsablemente frameworks en el Back-End para el desarrollo de aplicaciones web.",
+        "semanas": [
+          {
+            "numero": 5,
+            "contenidos": [
+              "JavaScript en el Back-End."
+            ]
+          },
+          {
+            "numero": 6,
+            "contenidos": [
+              "Plataforma LAMP y despliegue de aplicaciones web con frameworks Back-End."
+            ]
+          },
+          {
+            "numero": 7,
+            "contenidos": [
+              "Exposiciones de Frameworks Back-End."
+            ]
+          },
+          {
+            "numero": 8,
+            "contenidos": [
+              "Despliegue de plataformas de propósito general y específicas para el desarrollo de aplicaciones Web."
+            ]
+          }
+        ],
+        "metodologias": [
+          "Lectura: Revisión de la documentación oficial de las plataformas y frameworks de desarrollo web.",
+          "Prácticas: Implementación de funcionalidades desde repositorios de código fuente.",
+          "Aprendizaje basado en proyectos: Desarrollo incremental de una aplicación web.",
+          "Clase magistral: Recomendaciones del desarrollo web. Estándares Web. Accesibilidad. Seguridad. Buenas prácticas."
+        ],
+        "fuentesConsulta": [
+          {
+            "tipo": "libro",
+            "referencia": "Jin, B., Sahni, S., & Shevat, A. (2018). Designing web APIs: building APIs that developers love (First edition). Sebastopol, CA: O'Reilly Media."
+          },
+          {
+            "tipo": "libro",
+            "referencia": "McFedries, P. (2018). Web coding & development all-in-one. Hoboken, NJ: John Wiley & Sons, Inc."
+          },
+          {
+            "tipo": "web",
+            "referencia": "NodeJS: https://www.w3schools.com/nodejs/default.asp, https://nodejs.org/en"
+          },
+          {
+            "tipo": "web",
+            "referencia": "CakePHP: https://cakephp.org/, https://book.cakephp.org/5/en/tutorials-and-examples/cms/installation.html"
+          },
+          {
+            "tipo": "web",
+            "referencia": "Django: https://www.djangoproject.com/, https://docs.djangoproject.com/en/5.1/intro/tutorial01/"
+          },
+          {
+            "tipo": "web",
+            "referencia": "Drupal: https://new.drupal.org/home, https://www.drupal.org/docs/user_guide/en/index.html"
+          }
+        ]
+      },
+      {
+        "numero": "III",
+        "denominacion": "Seguridad en el desarrollo de aplicaciones web",
+        "intervaloFechas": "Del 05 de mayo al 31 de mayo del 2025.",
+        "capacidad": "El estudiante conoce y reflexiona acerca de la seguridad en las aplicaciones web.",
+        "semanas": [
+          {
+            "numero": 9,
+            "contenidos": [
+              "Examen Parcial."
+            ]
+          },
+          {
+            "numero": 10,
+            "contenidos": [
+              "OWASP Top Ten. Inyección SQL.",
+              "Exposiciones OWASP top Ten."
+            ]
+          },
+          {
+            "numero": 11,
+            "contenidos": [
+              "Exposiciones OWASP top Ten."
+            ]
+          },
+          {
+            "numero": 12,
+            "contenidos": [
+              "Presentación de avance de proyecto:",
+              "Desarrollo incremental de una aplicación web"
+            ]
+          }
+        ],
+        "metodologias": [
+          "Lectura: Revisión de la documentación oficial de las plataformas y frameworks de desarrollo web.",
+          "Prácticas: Implementación de funcionalidades desde repositorios de código fuente.",
+          "Aprendizaje basado en proyectos: Desarrollo incremental de una aplicación web.",
+          "Clase magistral: Recomendaciones del desarrollo web. Estándares Web. Accesibilidad. Seguridad. Buenas prácticas."
+        ],
+        "fuentesConsulta": [
+          {
+            "tipo": "libro",
+            "referencia": "Singh, H., & Bhatt, M. (2016). Learning web development with React and Bootstrap: build real-time responsive web apps using React and Bootstrap."
+          },
+          {
+            "tipo": "libro",
+            "referencia": "McFedries, P. (2018). Web coding & development all-in-one. Hoboken, NJ: John Wiley & Sons, Inc."
+          },
+          {
+            "tipo": "web",
+            "referencia": "OWASP Top Ten: https://owasp.org/www-project-top-ten/"
+          },
+          {
+            "tipo": "web",
+            "referencia": "CVE-2024-24213: SQL Injection Vulnerability in Supabase PostgreSQL v15.1: https://vulert.com/vuln-db/CVE-2024-24213"
+          }
+        ]
+      },
+      {
+        "numero": "IV",
+        "denominacion": "Proyecto de desarrollo de una aplicación web",
+        "intervaloFechas": "Del 02 de junio al 07 de julio del 2025.",
+        "capacidad": "El estudiante desarrolla un proyecto de aplicación web que resuelve una necesidad en el mundo real.",
+        "semanas": [
+          {
+            "numero": 13,
+            "contenidos": [
+              "Presentación de avance de proyecto:",
+              "Desarrollo incremental de una aplicación web"
+            ]
+          },
+          {
+            "numero": 14,
+            "contenidos": [
+              "Presentación de avance de proyecto:",
+              "Desarrollo incremental de una aplicación web"
+            ]
+          },
+          {
+            "numero": 15,
+            "contenidos": [
+              "Presentación de avance de proyecto:",
+              "Desarrollo incremental de una aplicación web"
+            ]
+          },
+          {
+            "numero": 16,
+            "contenidos": [
+              "Presentación de avance de proyecto:",
+              "Desarrollo incremental de una aplicación web"
+            ]
+          },
+          {
+            "numero": 17,
+            "contenidos": [
+              "Examen final"
+            ]
+          }
+        ],
+        "metodologias": [
+          "Lectura: Revisión de la documentación oficial de las plataformas y frameworks de desarrollo web.",
+          "Prácticas: Implementación de funcionalidades desde repositorios de código fuente.",
+          "Aprendizaje basado en proyectos: Desarrollo incremental de una aplicación web.",
+          "Clase magistral: Recomendaciones del desarrollo web. Estándares Web. Accesibilidad. Seguridad. Buenas prácticas."
+        ],
+        "fuentesConsulta": [
+          {
+            "tipo": "libro",
+            "referencia": "Singh, H., & Bhatt, M. (2016). Learning web development with React and Bootstrap: build real-time responsive web apps using React and Bootstrap."
+          },
+          {
+            "tipo": "libro",
+            "referencia": "McFedries, P. (2018). Web coding & development all-in-one. Hoboken, NJ: John Wiley & Sons, Inc."
+          },
+          {
+            "tipo": "web",
+            "referencia": "Vue Tutorial: https://www.powersync.com/blog/vue-tutorial-offline-first-todo-app-with-supabase-and-powersync"
+          },
+          {
+            "tipo": "web",
+            "referencia": "Tutorial de Supabase y Vue 3: https://www.youtube.com/watch?v=Oqxej1ZaZSU&list=PLAiDzIdBfy8joPxs1Qw2gT0IJWoOn6aA3"
+          },
+          {
+            "tipo": "web",
+            "referencia": "Supabase Full Project: https://www.youtube.com/watch?v=Q4rXmxQ1AUM"
+          },
+          {
+            "tipo": "web",
+            "referencia": "The Largest and Most Special Vue Conference: https://vuejs.amsterdam/"
+          },
+          {
+            "tipo": "web",
+            "referencia": "Build a social network with Supabase and Vue 3: https://raddevon.com/articles/build-a-social-network-with-supabase-and-vue-3/"
+          },
+          {
+            "tipo": "web",
+            "referencia": "Tic Tac Go: https://github.com/pixelhop/tic-tac-go"
+          },
+          {
+            "tipo": "web",
+            "referencia": "Creating a microblog using Vue + Supabase: https://dev.to/ftonato/creating-a-microblog-using-vue-supabase-31p"
+          },
+          {
+            "tipo": "web",
+            "referencia": "Vue Tutorial: Offline-First ToDo app with Supabase and PowerSync: https://www.powersync.com/blog/vue-tutorial-offline-first-todo-app-with-supabase-and-powersync"
+          }
+        ]
+      }
+    ],
+    "actividades": {
+      "investigacionFormativa": "Los estudiantes investigan en la documentación oficial de proyectos de plataformas para el desarrollo web.",
+      "responsabilidadSocial": "Los estudiantes desarrollaran aplicaciones Web utilizando tecnologías web y plataformas para el Front-End y Back-End que resuelven el requerimiento de presentación de documentos académicos(Silabo) y asignaciones académicas a docentes(Reparto de carga académica)."
+    },
+    "criteriosEvaluacion": [
+      {
+        "tipo": "Evidencia 1",
+        "peso": "El promedio de la evidencia 1 y la evidencia 2 corresponde al 20% de la nota final.",
+        "fechaConsolidacion": "Hasta el 05 de abril.",
+        "descripcion": "Prácticas de laboratorio sobre uso de tecnologías y plataformas de desarrollo web. Exposiciones individuales y grupales."
+      },
+      {
+        "tipo": "Evidencia 2",
+        "peso": "El promedio de la evidencia 1 y la evidencia 2 corresponde al 20% de la nota final.",
+        "fechaConsolidacion": "Hasta el 26 de abril.",
+        "descripcion": "Prácticas de laboratorio sobre uso de tecnologías y plataformas de desarrollo web. Exposiciones individuales y grupales."
+      },
+      {
+        "tipo": "EXAMEN PARCIAL",
+        "peso": "La evaluación parcial corresponde al 30% de la nota final",
+        "fechaConsolidacion": "Evaluación del 05 al 10 de mayo Ingreso de notas hasta el 18 de mayo.",
+        "descripcion": "Presentación de avance de proyecto: Desarrollo incremental de una aplicación web Examen - rúbrica"
+      },
+      {
+        "tipo": "Evidencia 3",
+        "peso": "El promedio de la evidencia 3 y la evidencia 4 corresponde al 20% de la nota final.",
+        "fechaConsolidacion": "Hasta el 31 de mayo.",
+        "descripcion": "Prácticas de laboratorio sobre uso de tecnologías y plataformas de desarrollo web. Exposiciones individuales y grupales."
+      },
+      {
+        "tipo": "Evidencia 4",
+        "peso": "El promedio de la evidencia 3 y la evidencia 4 corresponde al 20% de la nota final.",
+        "fechaConsolidacion": "Hasta el 21 de junio.",
+        "descripcion": "Prácticas de laboratorio sobre uso de tecnologías y plataformas de desarrollo web. Exposiciones individuales y grupales."
+      },
+      {
+        "tipo": "EXAMEN FINAL",
+        "peso": "La evaluación final corresponde al 30% de la nota final.",
+        "fechaConsolidacion": "Evaluación del 30 de junio hasta el 05 de julio Ingreso de notas hasta el 06 de julio. Entrega y revisión de exámenes 07 de julio.",
+        "descripcion": "Presentación de avance de proyecto: Desarrollo incremental de una aplicación web Examen - rúbrica"
+      }
+    ],
+    "firmaDocente": null,
+    "fechaFirma": "lunes, 10 de marzo de 2025"
+  }
